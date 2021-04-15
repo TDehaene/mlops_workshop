@@ -13,7 +13,7 @@ inputs:
     default: Cover_Type
 implementation:
   container:
-    image: eu.gcr.io/gothic-parsec-308513/YOUR-NAME/preprocessing:latest
+    image: eu.gcr.io/third-being-310214/thomasdehaene/preprocessing:latest
     command:
       [
         python,

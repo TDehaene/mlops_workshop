@@ -21,7 +21,7 @@ inputs:
     default: TRUE
 implementation:
   container:
-    image: eu.gcr.io/gothic-parsec-308513/YOUR-NAME/training:latest
+    image: eu.gcr.io/third-being-310214/thomasdehaene/training:latest
     command:
       [
         python,
@@ -37,3 +37,7 @@ implementation:
         --scale_pos_weight,
         { inputValue: scale_pos_weight },
       ]
+    resources:
+      limits:
+        cpu: "50m"
+        memory: "100Mi"

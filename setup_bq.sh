@@ -21,10 +21,4 @@ Cover_Type:INTEGER
 
 bq --location=$DATASET_LOCATION --project_id=$PROJECT_ID mk --dataset $DATASET_ID
 
-bq --project_id=$PROJECT_ID --dataset_id=$DATASET_ID load \
---source_format=CSV \
---skip_leading_rows=1 \
---replace \
-$TABLE_ID \
-$DATA_SOURCE \
-$SCHEMA
+bq --project_id=$PROJECT_ID --dataset_id=$DATASET_ID load --source_format=CSV --skip_leading_rows=1 --replace $TABLE_ID $DATA_SOURCE $SCHEMA

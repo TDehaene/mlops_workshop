@@ -13,7 +13,7 @@ inputs:
     default: 0.2
 implementation:
   container:
-    image: eu.gcr.io/gothic-parsec-308513/YOUR-NAME/split_data:latest
+    image: eu.gcr.io/third-being-310214/thomasdehaene/split_data:latest
     command:
       [
         python,

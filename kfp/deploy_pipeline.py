@@ -5,14 +5,16 @@ import fire
 import kfp
 
 from pipelines.end_to_end_pipeline import end_to_end_pipeline
+from pipelines.parallel_pipeline import parallel_pipeline
 
 
 # The URL of the Kubeflow Pipelines Host (can be found in the AI platform pipelines UI)
-KFP_HOST = 'YOUR-KFP-HOST'
+KFP_HOST = 'https://2b2b1f6c87cd70f-dot-europe-west1.pipelines.googleusercontent.com'
 KFP_CLIENT = kfp.Client(KFP_HOST)
 
 PIPELINES = {
-    'end_to_end_pipeline': end_to_end_pipeline
+    'end_to_end_pipeline': end_to_end_pipeline,
+    'parallel_pipeline': parallel_pipeline
 }
 
 
