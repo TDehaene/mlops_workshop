@@ -9,7 +9,7 @@ from pipelines.parallel_pipeline import parallel_pipeline
 
 
 # The URL of the Kubeflow Pipelines Host (can be found in the AI platform pipelines UI)
-KFP_HOST = 'https://2b2b1f6c87cd70f-dot-europe-west1.pipelines.googleusercontent.com'
+KFP_HOST = 'YOUR URL'
 KFP_CLIENT = kfp.Client(KFP_HOST)
 
 PIPELINES = {
